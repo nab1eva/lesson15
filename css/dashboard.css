@@ -1,0 +1,146 @@
+
+.maintop, .mainbottom{
+	margin: 60px 0 30px 0;
+	display: flex;
+	align-items: center;
+}
+
+.maintop i, .mainbottom i{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+    width: 35px;
+    background-color: var(--blue);
+    border-radius: 6px;
+    color: var(--title-icon-color);
+}
+
+.maintop h1, .mainbottom h1{
+	font-size: 24px;
+    font-weight: 500;
+    color: var(--black);
+    margin-left: 10px;
+}
+
+.uil-tachometer-fast-alt, .uil-clock{
+	font-size: 25px;
+}
+
+.cards{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card1{
+	margin-bottom: 10px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: calc(100% / 3 - 15px);
+    padding: 15px 20px;
+    background-color: var(--box1);
+    transition: var(--tran-05);
+}
+
+.card2{
+	margin-bottom: 10px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: calc(100% / 3 - 15px);
+    padding: 15px 20px;
+    background-color: var(--box2);
+    transition: var(--tran-05);
+}
+
+.card3{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: calc(100% / 3 - 15px);
+    padding: 15px 20px;
+    background-color: var(--box3);
+    transition: var(--tran-05);
+}
+
+.card1 .uil-thumbs-up, .card3 .uil-share, .card2 .uil-comments{
+	font-size: 30px;
+	color: var(--black);
+}
+
+h2{
+	font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+h3{
+	font-size: 40px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+
+
+
+.people{
+	margin: 0 auto 0 0;
+	
+}
+
+.people td, .people th{
+	padding: 15px 40px 15px 0;
+	line-height: 20px;
+}
+
+
+
+td{
+	height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: var(--black);
+}
+
+th{
+	text-align: left;
+	height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+
+.checkbox input{
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: var(--blue);
+}
+
+.checkbox input::after{
+	content: "";
+	display: inline-block;
+    margin: 6px 5px 5px;
+	width: 20px;
+	height: 10px;
+	transform: scale(0) rotate(-45deg);
+	transition: var(--tran-05);
+	border: 2px solid white;
+	border-color: transparent transparent white white;
+}
+
+.checkbox input:checked::after{
+	transform: scale(1) rotate(-45deg);
+}
+
+
+
+
+

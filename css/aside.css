@@ -1,0 +1,153 @@
+
+aside{
+	position: fixed;
+	top: 0;
+	width: var(--asidewidth);
+	height: 100vh;
+	border-right: 1px solid var(--bordercolor);
+	padding: 10px 14px;
+	overflow: auto;
+	transition: var(--tran-05);
+}
+
+
+
+aside::-webkit-scrollbar{
+	display: none;
+}
+
+.asidetop{
+	display: flex;
+	align-items: center;
+}
+
+.asidetop img{
+	margin-left: 2px;
+	width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.asidetop h1{
+	margin-left: 16px;
+	font-size: 22px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.asidebottom{
+	margin-bottom: 40px;
+	margin-top: 40px;
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+li a{
+	display: flex;
+    align-items: center;
+    height: 50px;
+	font-size: 18px;
+    font-weight: 400;
+	color: var(--grey);
+}
+
+li i{
+	font-size: 24px;
+    min-width: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links li a:hover{
+	color: var(--blue);
+
+}
+
+.logout{
+	padding-top: 10px;
+    border-top: 1px solid var(--bordercolor);
+}
+
+
+aside.close{
+	width: 73px;
+}
+
+aside.close ~ .dashboard {
+    left: 73px;
+    width: calc(100% - 73px);
+	transition: var(--tran-05);
+}
+
+aside.close li a span{
+    display: none;
+    pointer-events: none;
+	transition: var(--tran-05);
+}
+
+aside.close .uil-moon{
+    display: none;
+	transition: var(--tran-05);
+
+}
+
+aside.close .switch{
+	margin-left: 0;
+	transition: var(--tran-05);
+}
+
+aside.close .asidetop h1{
+	opacity: 0;
+	transition: var(--tran-05);
+}
+ 
+.logout li{
+	display: flex;
+	align-items: center;
+}
+
+.switch{
+	display: flex;
+	margin-left: 20px;
+}
+
+.switch input{
+	display: flex;
+	align-items: center;
+	height: 22px;
+    width: 40px;
+	padding: 2.5px;
+	background-color: var(--togglecolor);
+	border-radius: 15px;
+	appearance: none;
+	cursor: pointer;
+}
+
+.switch input::after{
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 12.5px;
+	background-color: var(--panelcolor);
+	transition: var(--tran-05);
+}
+
+.switch input:checked::after{
+	margin-left: 20px;
+	background-color: var(--panelcolor);
+}
+
+.switch input:checked{
+	background-color: var(--togglecolor);
+}
+
+
+
+
+

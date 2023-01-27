@@ -1,0 +1,39 @@
+
+
+@media (max-width: 1000px){
+	aside {
+		width: 73px;
+	}
+	.dashboard{
+		left: 73px;
+		width: calc(100% - 73px);
+	}
+	aside li a span{
+		display: none;
+		pointer-events: none;
+		transition: var(--tran-05);
+	}
+	aside .uil-moon{
+		display: none;
+		transition: var(--tran-05);
+	}
+	aside .switch{
+		margin-left: 0;
+		transition: var(--tran-05);
+	}
+}
+
+@media (max-width: 800px){
+	.cards{
+		flex-direction: column;
+	}
+	.card1, .card2, .card3{
+		width: 85%;
+	}
+}
+
+@media (max-width: 1000px){
+	
+}
+
+
